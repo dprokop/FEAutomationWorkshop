@@ -1,7 +1,7 @@
 Task 02 - grunt.js intro
 ====================
-
-1. Prepare files `package.json` and `Gruntfile.js` in the project directory
+1. Install grunt-cli `npm install -g grunt-cli`
+2. Prepare files `package.json` and `Gruntfile.js` in the project directory
 
     ```
     {
@@ -21,8 +21,8 @@ Task 02 - grunt.js intro
     }
     ```
 
-2. Add `grunt-contrib-less v.0.9.0`  dependency into the `package.json` file, and load it in grunt.js config file `Gruntfile.js` using `grunt.loadNpmTask()` method
-3. Install added dependency using `npm install` command
+3. Add `grunt-contrib-less v.0.9.0`  dependency into the `package.json` file, and load it in grunt.js config file `Gruntfile.js` using `grunt.loadNpmTask()` method
+4. Install added dependency using `npm install` command
 
 ## Links
 - [Grunt website] (http://gruntjs.com/)
