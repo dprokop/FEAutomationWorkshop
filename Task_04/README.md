@@ -16,5 +16,6 @@ Task 04 - Adding more plugins
 - [Grunt website] (http://gruntjs.com/)
 - [grunt-contrib-cssmin on github] (https://github.com/gruntjs/grunt-contrib-cssmin)
 - [grunt-contrib-watch on github] (https://github.com/gruntjs/grunt-contrib-watch)
+- - [Files operations in Grunt.js](http://gruntjs.com/configuring-tasks#files)
 
 
