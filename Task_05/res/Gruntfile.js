@@ -3,7 +3,7 @@ module.exports = function(grunt) {
 
   // Project configuration.
   grunt.initConfig({
-    // Metadata.
+
     less: {
       bootstrap: {
           options : { },
@@ -25,6 +25,25 @@ module.exports = function(grunt) {
         files : "./lib/bootstrap/less/*.less",
         tasks: "less:bootstrap"
       }
+    },
+    concat : {
+      options : {
+          separator: ';'
+      },
+      js: {
+        files : {
+          './dist/js/production.js' : ['./lib/jquery/jquery.js', './lib/bootstrap/js/*.js']
+        }
+      }
+    },
+    uglify : {
+      options : {
+        banner : '/*! Created in Making Waves! */'
+      },
+      js : {
+        src: './dist/js/production.js',
+        dest: './dist/js/production.min.js'
+      }
     }
   });
 
@@ -32,8 +51,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
 
   // Default task.
-  grunt.registerTask("compileAndMinify", ['less:bootstrap', 'cssmin:bootstrap']);
+  grunt.registerTask("compileAndMinify", ['less:bootstrap', 'cssmin:bootstrap', 'concat:js', 'uglify:js']);
 
 };
