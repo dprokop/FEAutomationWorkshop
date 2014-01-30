@@ -28,4 +28,5 @@ Task 02 - grunt.js intro
 - [Grunt website] (http://gruntjs.com/)
 
 ## Tip
-`package.json` file can be initialized using `npm init` command
+- `package.json` file can be initialized using `npm init` command
+-  Read more about [grunt-init](https://github.com/gruntjs/grunt-init)
