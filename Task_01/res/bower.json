@@ -1,0 +1,8 @@
+{
+  "name": "bower-test",
+  "version": "0.0.0",
+  "description": "Testing bower",
+  "dependencies": {
+    "bootstrap": "~3.0.3"
+  }
+}
